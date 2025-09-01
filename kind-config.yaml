@@ -5,9 +5,9 @@ networking:
   apiServerAddress: 127.0.0.1
 nodes:
   - role: control-plane
-    image: kindest/node:v.133.1
+    image: kindest/node:v1.34.0
   - role: worker
-    image: kindest/node:v.133.1
+    image: kindest/node:v1.34.0
   - role: worker
-    image: kindest/node:v.133.1
+    image: kindest/node:v1.34.0
 
