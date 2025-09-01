@@ -1,0 +1,8 @@
+services:
+  kind:
+    build: .
+    volumes:
+      - ./kind-config.yaml:/kind-config.yaml
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${PWD}/.kube/:/root/.kube/
+    command: tail -f /dev/null
